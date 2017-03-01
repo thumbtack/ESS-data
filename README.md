@@ -59,6 +59,10 @@ In addition to the national index scores, states and cities were chosen for comp
 
 ####How the data is stored####
 
+The data from our Economic Sentiment Survey are publicly available via our api. There are three primary data sources:
+1. Sentiments Data
+   * These are available on both the state and cbsa level and are described in more depth depth [below](#data-source-1) .
+
 
         
 
