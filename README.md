@@ -65,9 +65,11 @@ The data from our Economic Sentiment Survey are publicly available via our API. 
 
 1. Sentiments Data
    * These data summarize overall economic sentiment and are available on both the state and cbsa level. 
+   * These data are available in JSON format on the state level [here](https://data.thumbtack.com/v1/sentiments/states) and the city / CBSA level [here](https://data.thumbtack.com/v1/sentiments/cbsa).
    * Information on the data structure is avaialable [below](#data-source-1).
 2. Question Scores
    * The ESS asks a core set of 15 questions every month. The data in this section provides a breakdown of answers for each of these questions. 
+   * These data are available in JSON format [here](https://data.thumbtack.com/v1/question-scores).
    * For the full list of questions and corresponding answer choices, see [below](#data-source-2).
 3. Top Problems
    * These data describe the top problems faced by the small business owner-operators on Thumbtack. The options include:
@@ -84,6 +86,7 @@ The data from our Economic Sentiment Survey are publicly available via our API. 
       * Complying with government regulations 
       * Taxes 
       * Other
+   * These data are available in JSON format [here](https://data.thumbtack.com/v1/top-problems).
    * For more, see [below](#data-source-3).
    
 ###Data Dictionary and Sources###     
@@ -307,7 +310,7 @@ Field          |   Definition
 `count`        |   (int) sample size     
 `label`        |   (chr) top problem of concern for survey participants     
 `score`        |   (num) proportion of survey participants who selected problem type       
-      
+
 ###How to access ESS data via R
           
 Steps:      
