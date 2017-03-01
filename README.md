@@ -1,4 +1,4 @@
-## <span style="color: #F27802">Accessing Thumbtack's Economic Sentiment Survey Data</span>
+## <span style="color: #F27802">Accessing and Interpreting Thumbtack's Economic Sentiment Survey Data</span>
 
 # Table of Contents   
 1. [Overview of Thumbtack's Economic Sentiment Survey (ESS)](#summary)     
