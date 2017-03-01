@@ -20,11 +20,11 @@
 ###Overview of Thumbtack's Economic Sentiment Survey (ESS)     
 ####What is ESS?
 
-Every month, the [Thumbtack Economic Sentiment Survey](https://www.thumbtack.com/survey#/sentiment) captures the attitudes and perspectives of thousands of business owners from across the country to gauge how they are feeling about the economy and their businesses. Now in its sixth year, this survey provides a unique vantage point on the economy, as respondents are largely mobile service professionals with five or fewer employees who operate in households across the United States. Because they are hard to reach, these professionals are frequently overlooked in other surveys of small businesses.
-      
+Every month, the [Thumbtack Economic Sentiment Survey](https://www.thumbtack.com/survey#/sentiment) captures the attitudes and perspectives of thousands of business owners from across the country to gauge how they are feeling about the economy and their businesses. Designed in coordination with economists at Bloomberg in 2012, Thumbtack's Economic Sentiment Survey captures a ground-level view of the economy in all 50 states. These business owners we hear from in this survey work in a variety of service-based industries, with occupations such as general contractor, interior designer, photographer, and personal trainer. They are demographically and politically diverse: over 30% are non-white, 40% are female, and there are a near-identical number of self-identified Democrats and Republicans (24.65% and 24.32%, respectively). These respondents are largely mobile service professionals with five or fewer employees who operate in households across the United States. Because they are hard to reach, these professionals are frequently overlooked in other surveys of small businesses. 
+
 ####How the data is collected####
 
-We administer this survey through our website, prompting the small business owner-operators to take it by by displaying a banner at the top of their user dashboard. The survey is fielded for one week in the middle of every month, with the results posted on the Monday before the first Friday of every month. This is meant to synchronize with the monthly release by the Bureau of Labor Statistics of the national [Employment Situation](https://www.bls.gov/news.release/empsit.toc.htm). On average, we receive between 5,500 and 6,500 responses per month.     
+We administer this survey through an online, in-product survey portal, prompting small business owner-operators to take it by by displaying a banner at the top of their user dashboard. The survey is fielded for one week in the middle of every month, with the results posted on the Monday before the first Friday of every month. This is meant to synchronize with the monthly release by the Bureau of Labor Statistics of the national [Employment Situation](https://www.bls.gov/news.release/empsit.toc.htm). On average, we receive between 5,500 and 6,500 responses per month.     
         
 ####How the data is measured####
 
@@ -32,7 +32,7 @@ Based on the responses to the survey in each period, Thumbtack and Bloomberg hav
 
 These Indexes represent our current best estimates of where the strongest signal can be taken from the survey data collected to date – we expect to update the weights applied and formulas as more data comes in.
 
-An individual index number is computed for each question in Appendix A in each period using the following formulas:
+An individual index number is computed for each question in each period using the following formulas:
 
 * For questions with three point scales:
    - `(%_positive_response) + (0.5*(%_neutral_response))`
@@ -55,7 +55,7 @@ A separate Inflation Index is composed of the following 3 questions with weights
 * Inflation pass-thru (0.333 weight)
 * Wage plans (0.167 weight)
 
-In addition to the national index scores, states and cities were chosen for comparison with each other. Cities are defined by the borders of their Core-Based Statistical Area, as defined by the [Office of Management and Budget](https://www.whitehouse.gov/sites/default/files/omb/bulletins/2013/b13-01.pdf). Only cities and states with more than 50 respondents in any given period were chosen for comparison.
+In addition to the national index scores, states and cities were chosen for comparison with each other. Cities are defined by the borders of their Core-Based Statistical Area, as defined by the [Office of Management and Budget](https://www.census.gov/population/metro/data/metrodef.html). Only cities and states with more than 50 respondents in any given period were chosen for comparison.
 
 ####How the data is stored####
 
