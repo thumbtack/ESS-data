@@ -1,6 +1,6 @@
 ## <span style="color: #F27802">Accessing and Interpreting Thumbtack's Economic Sentiment Survey Data</span>
 
-# Table of Contents   
+### Table of Contents   
 1. [Overview of Thumbtack's Economic Sentiment Survey (ESS)](#summary)     
     * [What is ESS?](#what-is-ess?)     
     * [How the data is collected](#how-the-data-is-collected)    
@@ -14,16 +14,16 @@
     * [Data Source 3](#data-source-3) 
     * [Methodology](#methodology)     
         
-###Overview of Thumbtack's Economic Sentiment Survey (ESS)     
-####What is ESS?
+### Overview of Thumbtack's Economic Sentiment Survey (ESS)     
+#### What is the ESS?
 
 Every month, the [Thumbtack Economic Sentiment Survey](https://www.thumbtack.com/survey#/sentiment) captures the attitudes and perspectives of thousands of business owners from across the country to gauge how they are feeling about the economy and their businesses. Designed in coordination with economists at Bloomberg in 2012, Thumbtack's Economic Sentiment Survey captures a ground-level view of the economy in all 50 states. The business owners we hear from in this survey work in a variety of service-based industries, with occupations such as general contractor, interior designer, photographer, and personal trainer. They are demographically and politically diverse: over 30% are non-white, 40% are female, and there are a near-identical number of self-identified Democrats and Republicans (24.65% and 24.32%, respectively). These respondents are largely mobile service professionals with five or fewer employees who operate in households across the United States. Because they are hard to reach, these professionals are frequently overlooked in other surveys of small businesses. 
 
-####How the data is collected####
+#### How is the data collected?
 
 We administer this survey through an online, in-product survey portal, prompting small business owner-operators to take it by by displaying a banner at the top of their user dashboard. The survey is fielded for one week in the middle of every month, with the results posted on the Monday before the first Friday of every month. This is meant to synchronize with the monthly release by the Bureau of Labor Statistics of the national [Employment Situation](https://www.bls.gov/news.release/empsit.toc.htm). On average, we receive between 5,500 and 6,500 responses per month.     
         
-####How the data is measured####
+#### How is the data is measured?
 
 Based on the responses to the survey in each period, Thumbtack and Bloomberg have constructed two indices to track activity among small service professionals over time – a Small Business Sentiment Index and a Small Business Inflation index. These indices represent our current best estimates of where the strongest signal can be taken from the survey data collected to date.
 
@@ -52,7 +52,7 @@ A separate Inflation Index is composed of the following 3 questions, with weight
 
 In addition to the national index scores, we collect data on the state and city level. Cities are defined by the borders of their Core-Based Statistical Area, as defined by the [Office of Management and Budget](https://www.census.gov/population/metro/data/metrodef.html). We only collect data for cities and states when they have at least 50 respondents in the given survey period.
 
-####How the data is stored####
+#### How is the data stored?
 
 The data from our Economic Sentiment Survey are publicly available via our API. There are three primary data sources:
 
@@ -82,10 +82,10 @@ The data from our Economic Sentiment Survey are publicly available via our API. 
    * These data are available in JSON format [here](https://data.thumbtack.com/v1/top-problems).
    * For more, see [below](#data-source-3).
    
-###Data Dictionary and Sources
+### Data Dictionary and Sources
 In addition to asking the core set of economic and business questions every month, we also ask about our respondents' demographic characteristics, including gender, age, race / ethnicity ("origin"), employer status,  and industry type. Each answer to these questions has a numerical code, as defined below:
 
-####Demographics
+#### Demographics
 
     Gender    
     1 = Female  
@@ -112,7 +112,7 @@ In addition to asking the core set of economic and business questions every mont
     3 = Large Employer   
 
 
-####Industry
+#### Industry
     0 = All Industries      
     1 = Landscaping & Lawncare      
     2 = Transportation and Moving     
@@ -126,7 +126,7 @@ In addition to asking the core set of economic and business questions every mont
     10 = Professional Services      
     11 = Photography      
     
-####Data Source 1: Sentiment Data 
+#### Data Source 1: Sentiment Data 
 This data, defined on either the state or city (CBSA) level, is a composite score of economic expecations among the small business owner-operators we heard from in the given period. The data in this section are structured as follows:
         
  Field         | Definition      
@@ -138,7 +138,7 @@ This data, defined on either the state or city (CBSA) level, is a composite scor
  `score`       | (num) sentiment index value ranging from (0-1) based on 8 survey questions and weighted accordingly (see ESS methodology doc. for details)       
    
       
-####Data Source 2: Question Scores
+#### Data Source 2: Question Scores
 The ESS asks a core set of 15 questions every month. The data in this section provides a breakdown of answers for each of these questions. The data in this section are structured as follows:     
 
 Field          |  Definition      
@@ -150,7 +150,7 @@ Field          |  Definition
 `start_date`   |  (chr) survey start date     
         
              
-#####Questions: (`id`)
+##### Questions: (`id`)
 The following section defines `id` and matches its subject heading on the survey site to the survey questions and answers it corresopnds to. For example, 'Cost passed on to customers' is the subject heading on the survey site, which corresponds to id `higherCostPassOn` and the question "If your costs increased 5% today, how much of that cost increase could you pass on to customers through higher prices?", which has three levels.   
               
 Costs passed on to customers (`higherCostPassOn`):
@@ -295,7 +295,7 @@ How would you rate your company's financial situation today?
     5 = Very good       
 ```          
           
-####Data Source 3: Top Problems              
+#### Data Source 3: Top Problems              
 Every month, the ESS also asks Thumbtack pros about the top problem their business is currently facing. The data from this question is structured as follows:
           
 Field          |   Definition      
