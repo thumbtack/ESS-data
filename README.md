@@ -41,14 +41,21 @@ An individual index number is computed for each question in Appendix A in each p
 * For questions with true/false answers, only the percentage of positive answers was used.
 
 These indexes are combined into a Sentiment Index, comprised of the following 8 questions, each weighted accordingly:
-* Current Financial Condition: (0.17 weight) 
-* Financial Condition in 3 months: (0.17 weight)
-* Economic Condition in 3 months: (0.08 weight)
-* Profitability Expectations in 3 months: (0.13 weight)
-* Job openings in the past 3 months: (0.08 weight)
-* Employment change expected in 3 months: (0.17 weight)
-* Expected credit conditions: (0.08 weight)
-* Expected capital expenditures: (0.13 weight)
+* Current Financial Condition (0.17 weight) 
+* Financial Condition in 3 months (0.17 weight)
+* Economic Condition in 3 months (0.08 weight)
+* Profitability Expectations in 3 months (0.13 weight)
+* Job openings in the past 3 months (0.08 weight)
+* Employment change expected in 3 months (0.17 weight)
+* Expected credit conditions (0.08 weight)
+* Expected capital expenditures (0.13 weight)
+
+A separate Inflation Index is composed of the following 3 questions with weights in parenthesis:
+* Price Expectations (0.5 weight)
+* Inflation pass-thru (0.333 weight)
+* Wage plans (0.167 weight)
+
+In addition to the national index scores, states and cities were chosen for comparison with each other. Cities are defined by the borders of their Core-Based Statistical Area, as defined by the [Office of Management and Budget](https://www.whitehouse.gov/sites/default/files/omb/bulletins/2013/b13-01.pdf). Only cities and states with more than 50 respondents in any given period were chosen for comparison.
 
 ####How the data is stored####
 
