@@ -33,12 +33,22 @@ Based on the responses to the survey in each period, Thumbtack and Bloomberg hav
 These Indexes represent our current best estimates of where the strongest signal can be taken from the survey data collected to date – we expect to update the weights applied and formulas as more data comes in.
 
 An individual index number is computed for each question in Appendix A in each period using the following formulas:
-*For questions with three point scales:
-- (%_positive_response) + (0.5*(%_neutral_response))
+
+* For questions with three point scales:
+   - `(%_positive_response) + (0.5*(%_neutral_response))`
 * For questions with a five point scale:
-- (%_positive_response + %_very_positive_response) + (0.5*(%_neutral_response)
+   - `(%_positive_response + %_very_positive_response) + (0.5*(%_neutral_response)`
 * For questions with true/false answers, only the percentage of positive answers was used.
 
+These indexes are combined into a Sentiment Index, comprised of the following 8 questions, each weighted accordingly:
+* Current Financial Condition: (0.17 weight) 
+* Financial Condition in 3 months: (0.17 weight)
+* Economic Condition in 3 months: (0.08 weight)
+* Profitability Expectations in 3 months: (0.13 weight)
+* Job openings in the past 3 months: (0.08 weight)
+* Employment change expected in 3 months: (0.17 weight)
+* Expected credit conditions: (0.08 weight)
+* Expected capital expenditures: (0.13 weight)
 
 ####How the data is stored####
 
