@@ -60,12 +60,29 @@ In addition to the national index scores, states and cities were chosen for comp
 ####How the data is stored####
 
 The data from our Economic Sentiment Survey are publicly available via our api. There are three primary data sources:
+
 1. Sentiments Data
-   * These are available on both the state and cbsa level and are described in more depth depth [below](#data-source-1) .
-
-
-        
-
+   * These data summarize overall economic sentiment and are available on both the state and cbsa level. Information on the data structure is avaialable [below](#data-source-1).
+2. Question Scores
+   * The ESS asks a core set of 15 survey questions every month. The data here details the breakdown of answers for each of these questions. 
+   * For the full list of questions and corresponding answer choices, see [below](#data-source-2).
+3. Top Problems
+   * These data describe the top problems faced by the small business owner-operators on Thumbtack. The options include:
+      * Access to credit 
+      * Interest rates
+      * Access to health care or health care costs 
+      * Competition from big business and overseas 
+      * Competition from other small buisnesses 
+      * Uncertain economic conditions 
+      * Consumer confidence 
+      * Acquiring new customers 
+      * Cost / quality of labor 
+      * Inflation Poor sales 
+      * Complying with government regulations 
+      * Taxes 
+      * Other
+   * For more, see [below](#data-source-3).
+   
 ###Data Dictionary and Sources###     
 ####Demographics####      
     Gender    
