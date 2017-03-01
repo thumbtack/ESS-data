@@ -17,11 +17,10 @@
 3. [Access the data via R](#how-to-access-ess-data-via-r)
 4. [Access the data via Python](#how-to-access-ess-data-via-python)      
         
-###Overview of Thumbtack's Economic Sentiment Survey (ESS)###       
-####What is ESS?####          
+###Overview of Thumbtack's Economic Sentiment Survey (ESS)     
+####What is ESS?
 
-
-     
+Every month, the Thumbtack Economic Sentiment Survey captures the attitudes and perspectives of thousands of business owners from across the country to gauge how they are feeling about the economy and their businesses. Now in its sixth year, this survey provides a unique vantage point on the economy, as respondents are largely mobile service professionals with five or fewer employees who operate in households across the United States. Because they are hard to reach, these professionals are frequently overlooked in other surveys of small businesses.
       
 ####How the data is collected####
 
