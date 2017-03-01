@@ -1,0 +1,229 @@
+###Data Dictionary and Sources###     
+####Demographics####      
+    Gender    
+    1 = Female  
+    2 = Male  
+                
+    Age  
+    1 = Under 25  
+    2 = 25 - 34  
+    3 = 35 - 44  
+    4 = 45 - 54   
+    5 = 55 - 64  
+    6 = 65 or above    
+        
+    Origin   
+    1 = Hispanic, Latino, or Spanish   
+    2 = Asian   
+    3 = Other   
+    4 = White (Caucasian)  
+    5 = Black or African American   
+          
+    Employer    
+    1 = Non-employer  
+    2 = Small Employer   
+    3 = Large Employer   
+
+
+####Industry####        
+    0 = All Industries      
+    1 = Landscaping & Lawncare      
+    2 = Transportation and Moving     
+    3 = Wellness         
+    4 = Lessons     
+    5 = Pet Care    
+    6 = Cleaning    
+    7 = Events    
+    8 = Home Improvement      
+    9 = Personal Services     
+    10 = Professional Services      
+    11 = Photography      
+    
+####Data Source 1####
+Sentiments Data (State or CBSA View)            
+        
+ Field         | Definition      
+ ------------- | -------------       
+ `id`          | (chr) state or cbsa     
+ `start_date`  | (chr) survey start date   
+ `end_date`    | (chr) survey end date      
+ `count`       | (int) sample size   
+ `score`       | (num) sentiment index value ranging from (0-1) based on 8 survey questions and weighted accordingly (see ESS methodology doc. for details)       
+   
+      
+####Data Source 2####             
+Question Scores           
+
+Field          |  Definition      
+-------------  |  ----------------      
+`id`           |  (chr) survey question id     
+`levels`       |  (int) number of levels         
+`scores`       |  (list) level = level number of answer; score = answer proportion selected by survey participants      
+`end_date`     |  (chr) survey end date     
+`start_date`   |  (chr) survey start date     
+        
+             
+#####Questions: (`id`)#####       
+The ESS asks 15 survey questions that are displayed on Thumbtack's survey website every month. The following section defines `id` and matches its subject heading on the survey site which corresponds to the survey questions and answers.       
+        
+For example:      
+'Cost passed on to customers' is the subject heading on the survey site, which corresponds to id `higherCostPassOn` and the question
+"If your costs increased 5% today, how much of that cost increase could you pass on to customers through higher prices?" with three levels.     
+        
+          
+              
+Costs passed on to customers (`higherCostPassOn`)       
+```
+If your costs increased 5% today, how much of that cost increase could you pass on to customers through higher prices?   
+    1 = Little or none of the cost increase         
+    3 = About half of the cost increase     
+    5 = All or most of the cost increase    
+```       
+      
+Availability of credit (`pastThreeDidYou`)
+```
+During the past three months did you:   
+    1 = Seek credit but were turned down or denied
+    2 = Seek credit but refuse it because of the terms or conditions attached   
+    3 = Not seek credit because you didn't think your loan application would be approved  
+    4 = Not seek credit because you didn't need it      
+    5 = Seek credit and receive some of the amount needed   
+    6 = Seek credit and receive most of the amount needed     
+    7 = Seek credit and receive the full amount needed    
+```
+      
+Difficulty of hiring new people (`pastThreeFillEase`)                
+```
+How difficult or easy was it to fill the full-time or part-time job openings(s) over the past three months?   
+    1 = Very difficult   
+    2 = Somewhat difficult   
+    3 = Neither easy nor difficult          
+    4 = Somewhat easy      
+    5 = Very easy   
+```
+
+Any recent hires? (`pastThreeFillJob`)            
+```
+Have you filled or attempted to fill any full-time or part-time job openings over the past three months?    
+    1 = No      
+    2 = Yes     
+```
+      
+Change in employee compensation (`threeMonthAvgComp`)      
+```
+How do you expect your average employee compensation to change over the next three months?
+    1 = Decrease a lot
+    2 = Decrease a little
+    3 = Stay about the same     
+    4 = Increase a lot 
+    5 = Increase  a little         
+```
+          
+Outlook on business conditions (`threeMonthBizCond`)           
+```
+How do you think business conditions in the general economy will be in three months, compared with the conditions now?    
+    1 = Much worse than they are now          
+    2 = A little worse than they are now      
+    3 = About the same as they are now      
+    4 = A littler better than they are now      
+    5 = Much better than they are now     
+```
+
+Outlook on expenditures (`threeMonthCapExpChange`)      
+```
+How do you exepct your capital expenditures to change over the next three months?   
+    1 = Decrease        
+    3 = Stay about the same     
+    5 = Increase       
+```
+      
+Outlook on number of employees (`threeMonthEmpChange`)          
+```
+How do you expect the total number of employees in your business to change over the next three months?    
+    1 = Decrease          
+    3 = Stay about the same       
+    5 = Increase        
+```
+
+Financial outlook (`threeMonthFinSit`)      
+```
+How do you think your company's financial situation will be in three months from now?       
+    1 = Substantially worse     
+    2 = A little worse    
+    3 = About the same as today   
+    4 = A little better   
+    5 = Substantially better      
+```
+
+Outlook on getting loans (`threeMonthHardLoans`)            
+```
+Do you expect to find it harder or easier to get loans in three months than it is now? 
+    0 = I don't know    
+    1 = Much harder in three months     
+    2 = A little harder in three months     
+    3 = About the same      
+    4 = A little easier in three months     
+    5 = Much easier in three months       
+```
+    
+      
+Change of prices charged (`threeMonthPriceChange`)       
+``` 
+How do you expect the prices you charge your customers or clients to change over the next three months?   
+    1 = Decrease by more than 10%     
+    2 = Decrease by 1-10%   
+    3 = Stay about the same        
+    4 = Increase by 1-10%       
+    5 = Increase by more than 10%         
+```
+      
+               
+Outlook on profitability (`threeMonthProfitChange`)
+```
+How do you expect your company's profitability (net earnings after taxes) to change over the next three months?     
+    1 = Decrease by more than 10%         
+    2 = Decrease by 1-10%       
+    3 = Stay about the same       
+    4 = Increase by 1-10%     
+    5 = Increase by more than 10%       
+```
+
+          
+Revenue outlook (`threeMonthRevChange`)           
+```     
+How do you exect your company's revenues to change over the next three months?        
+    1 = Decrease by more than 10%           
+    2 = Decrease by 1-10%       
+    3 = Stay about the same       
+    4 = Increase by 1-10%     
+    5 = Increase by more than 10%      
+```
+
+                      
+Change in employee education (`threeMonthTrainingChange`)            
+```
+How do you expect your expenditures to improve your or your employees' training, education or expertise about your business to change over the next three months?
+    1 = Decrease    
+    3 = Stay about the same     
+    5 = Increase          
+```
+          
+Financial situation today (`todayFinSit`)           
+```
+How would you rate your company's financial situation today?
+    1 = Very bad      
+    2 = Somewhat bad    
+    3 = Neither good nor bad      
+    4 = Somewhat good     
+    5 = Very good       
+```          
+          
+####Data Source 3####            
+Top Problems              
+          
+Field          |   Definition      
+-------------  |   ----------------        
+`date`         |   (chr) survey month and year     
+`count`        |   (int) sample size     
+`label`        |   (chr) top problem of concern for survey participants     
+`score`        |   (num) proportion of survey participants who selected problem type     
