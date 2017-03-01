@@ -20,7 +20,7 @@
 ###Overview of Thumbtack's Economic Sentiment Survey (ESS)     
 ####What is ESS?
 
-Every month, the [Thumbtack Economic Sentiment Survey](https://www.thumbtack.com/survey#/sentiment) captures the attitudes and perspectives of thousands of business owners from across the country to gauge how they are feeling about the economy and their businesses. Designed in coordination with economists at Bloomberg in 2012, Thumbtack's Economic Sentiment Survey captures a ground-level view of the economy in all 50 states. These business owners we hear from in this survey work in a variety of service-based industries, with occupations such as general contractor, interior designer, photographer, and personal trainer. They are demographically and politically diverse: over 30% are non-white, 40% are female, and there are a near-identical number of self-identified Democrats and Republicans (24.65% and 24.32%, respectively). These respondents are largely mobile service professionals with five or fewer employees who operate in households across the United States. Because they are hard to reach, these professionals are frequently overlooked in other surveys of small businesses. 
+Every month, the [Thumbtack Economic Sentiment Survey](https://www.thumbtack.com/survey#/sentiment) captures the attitudes and perspectives of thousands of business owners from across the country to gauge how they are feeling about the economy and their businesses. Designed in coordination with economists at Bloomberg in 2012, Thumbtack's Economic Sentiment Survey captures a ground-level view of the economy in all 50 states. The business owners we hear from in this survey work in a variety of service-based industries, with occupations such as general contractor, interior designer, photographer, and personal trainer. They are demographically and politically diverse: over 30% are non-white, 40% are female, and there are a near-identical number of self-identified Democrats and Republicans (24.65% and 24.32%, respectively). These respondents are largely mobile service professionals with five or fewer employees who operate in households across the United States. Because they are hard to reach, these professionals are frequently overlooked in other surveys of small businesses. 
 
 ####How the data is collected####
 
@@ -28,9 +28,7 @@ We administer this survey through an online, in-product survey portal, prompting
         
 ####How the data is measured####
 
-Based on the responses to the survey in each period, Thumbtack and Bloomberg have constructed two indexes that we hope will be able to track activity among small service professionals over time – a Small Business Sentiment Index and a Small Business Inflation index.
-
-These Indexes represent our current best estimates of where the strongest signal can be taken from the survey data collected to date – we expect to update the weights applied and formulas as more data comes in.
+Based on the responses to the survey in each period, Thumbtack and Bloomberg have constructed two indices to track activity among small service professionals over time – a Small Business Sentiment Index and a Small Business Inflation index. These indices represent our current best estimates of where the strongest signal can be taken from the survey data collected to date.
 
 An individual index number is computed for each question in each period using the following formulas:
 
@@ -50,21 +48,22 @@ These indexes are combined into a Sentiment Index, comprised of the following 8 
 * Expected credit conditions (0.08 weight)
 * Expected capital expenditures (0.13 weight)
 
-A separate Inflation Index is composed of the following 3 questions with weights in parenthesis:
+A separate Inflation Index is composed of the following 3 questions, with weights in parentheses:
 * Price Expectations (0.5 weight)
 * Inflation pass-thru (0.333 weight)
 * Wage plans (0.167 weight)
 
-In addition to the national index scores, states and cities were chosen for comparison with each other. Cities are defined by the borders of their Core-Based Statistical Area, as defined by the [Office of Management and Budget](https://www.census.gov/population/metro/data/metrodef.html). Only cities and states with more than 50 respondents in any given period were chosen for comparison.
+In addition to the national index scores, we collect data on the state and city level. Cities are defined by the borders of their Core-Based Statistical Area, as defined by the [Office of Management and Budget](https://www.census.gov/population/metro/data/metrodef.html). We only collect data for cities and states when they have at least 50 respondents in the given survey period.
 
 ####How the data is stored####
 
-The data from our Economic Sentiment Survey are publicly available via our api. There are three primary data sources:
+The data from our Economic Sentiment Survey are publicly available via our API. There are three primary data sources:
 
 1. Sentiments Data
-   * These data summarize overall economic sentiment and are available on both the state and cbsa level. Information on the data structure is avaialable [below](#data-source-1).
+   * These data summarize overall economic sentiment and are available on both the state and cbsa level. 
+   * Information on the data structure is avaialable [below](#data-source-1).
 2. Question Scores
-   * The ESS asks a core set of 15 survey questions every month. The data here details the breakdown of answers for each of these questions. 
+   * The ESS asks a core set of 15 questions every month. The data in this section provides a breakdown of answers for each of these questions. 
    * For the full list of questions and corresponding answer choices, see [below](#data-source-2).
 3. Top Problems
    * These data describe the top problems faced by the small business owner-operators on Thumbtack. The options include:
