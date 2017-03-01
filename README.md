@@ -84,7 +84,7 @@ The data from our Economic Sentiment Survey are publicly available via our API. 
    
 ###Data Dictionary and Sources###     
 ####Demographics
-In addition to asking the core set of economic and business questions every month, we also ask about our respondents' demographic characteristics, such as gender, age, race / ethnicity ("origin"), employer status,  and industry type. Each answer to these questions has a code, as defined below:
+In addition to asking the core set of economic and business questions every month, we also ask about our respondents' demographic characteristics, including gender, age, race / ethnicity ("origin"), employer status,  and industry type. Each answer to these questions has a numerical code, as defined below:
 
     Gender    
     1 = Female  
@@ -125,8 +125,8 @@ In addition to asking the core set of economic and business questions every mont
     10 = Professional Services      
     11 = Photography      
     
-####Data Source 1####
-Sentiments Data (State or CBSA View)            
+####Data Source 1: Sentiment Data 
+This data, defined on either the state or city (CBSA) level, is a composite score of economic expecations among the small business owner-operators we heard from in the given period. The data in this section are structured as follows:
         
  Field         | Definition      
  ------------- | -------------       
@@ -137,8 +137,8 @@ Sentiments Data (State or CBSA View)
  `score`       | (num) sentiment index value ranging from (0-1) based on 8 survey questions and weighted accordingly (see ESS methodology doc. for details)       
    
       
-####Data Source 2####             
-Question Scores           
+####Data Source 2: Question Scores
+The ESS asks a core set of 15 questions every month. The data in this section provides a breakdown of answers for each of these questions. The data in this section are structured as follows:     
 
 Field          |  Definition      
 -------------  |  ----------------      
@@ -149,16 +149,10 @@ Field          |  Definition
 `start_date`   |  (chr) survey start date     
         
              
-#####Questions: (`id`)#####       
-The ESS asks 15 survey questions that are displayed on Thumbtack's survey website every month. The following section defines `id` and matches its subject heading on the survey site which corresponds to the survey questions and answers.       
-        
-For example:      
-'Cost passed on to customers' is the subject heading on the survey site, which corresponds to id `higherCostPassOn` and the question
-"If your costs increased 5% today, how much of that cost increase could you pass on to customers through higher prices?" with three levels.     
-        
-          
+#####Questions: (`id`)
+The following section defines `id` and matches its subject heading on the survey site to the survey questions and answers it corresopnds to. For example, 'Cost passed on to customers' is the subject heading on the survey site, which corresponds to id `higherCostPassOn` and the question "If your costs increased 5% today, how much of that cost increase could you pass on to customers through higher prices?", which has three levels.   
               
-Costs passed on to customers (`higherCostPassOn`)       
+Costs passed on to customers (`higherCostPassOn`):
 ```
 If your costs increased 5% today, how much of that cost increase could you pass on to customers through higher prices?   
     1 = Little or none of the cost increase         
@@ -166,7 +160,7 @@ If your costs increased 5% today, how much of that cost increase could you pass 
     5 = All or most of the cost increase    
 ```       
       
-Availability of credit (`pastThreeDidYou`)
+Availability of credit (`pastThreeDidYou`):
 ```
 During the past three months did you:   
     1 = Seek credit but were turned down or denied
@@ -178,7 +172,7 @@ During the past three months did you:
     7 = Seek credit and receive the full amount needed    
 ```
       
-Difficulty of hiring new people (`pastThreeFillEase`)                
+Difficulty of hiring new people (`pastThreeFillEase`):         
 ```
 How difficult or easy was it to fill the full-time or part-time job openings(s) over the past three months?   
     1 = Very difficult   
@@ -188,14 +182,14 @@ How difficult or easy was it to fill the full-time or part-time job openings(s) 
     5 = Very easy   
 ```
 
-Any recent hires? (`pastThreeFillJob`)            
+Any recent hires? (`pastThreeFillJob`):
 ```
 Have you filled or attempted to fill any full-time or part-time job openings over the past three months?    
     1 = No      
     2 = Yes     
 ```
       
-Change in employee compensation (`threeMonthAvgComp`)      
+Change in employee compensation (`threeMonthAvgComp`):
 ```
 How do you expect your average employee compensation to change over the next three months?
     1 = Decrease a lot
@@ -205,7 +199,7 @@ How do you expect your average employee compensation to change over the next thr
     5 = Increase  a little         
 ```
           
-Outlook on business conditions (`threeMonthBizCond`)           
+Outlook on business conditions (`threeMonthBizCond`):
 ```
 How do you think business conditions in the general economy will be in three months, compared with the conditions now?    
     1 = Much worse than they are now          
@@ -215,7 +209,7 @@ How do you think business conditions in the general economy will be in three mon
     5 = Much better than they are now     
 ```
 
-Outlook on expenditures (`threeMonthCapExpChange`)      
+Outlook on expenditures (`threeMonthCapExpChange`):
 ```
 How do you exepct your capital expenditures to change over the next three months?   
     1 = Decrease        
@@ -223,7 +217,7 @@ How do you exepct your capital expenditures to change over the next three months
     5 = Increase       
 ```
       
-Outlook on number of employees (`threeMonthEmpChange`)          
+Outlook on number of employees (`threeMonthEmpChange`):
 ```
 How do you expect the total number of employees in your business to change over the next three months?    
     1 = Decrease          
@@ -231,7 +225,7 @@ How do you expect the total number of employees in your business to change over 
     5 = Increase        
 ```
 
-Financial outlook (`threeMonthFinSit`)      
+Financial outlook (`threeMonthFinSit`):
 ```
 How do you think your company's financial situation will be in three months from now?       
     1 = Substantially worse     
@@ -241,7 +235,7 @@ How do you think your company's financial situation will be in three months from
     5 = Substantially better      
 ```
 
-Outlook on getting loans (`threeMonthHardLoans`)            
+Outlook on getting loans (`threeMonthHardLoans`):
 ```
 Do you expect to find it harder or easier to get loans in three months than it is now? 
     0 = I don't know    
@@ -251,9 +245,8 @@ Do you expect to find it harder or easier to get loans in three months than it i
     4 = A little easier in three months     
     5 = Much easier in three months       
 ```
-    
       
-Change of prices charged (`threeMonthPriceChange`)       
+Change of prices charged (`threeMonthPriceChange`):
 ``` 
 How do you expect the prices you charge your customers or clients to change over the next three months?   
     1 = Decrease by more than 10%     
@@ -263,8 +256,7 @@ How do you expect the prices you charge your customers or clients to change over
     5 = Increase by more than 10%         
 ```
       
-               
-Outlook on profitability (`threeMonthProfitChange`)
+Outlook on profitability (`threeMonthProfitChange`):
 ```
 How do you expect your company's profitability (net earnings after taxes) to change over the next three months?     
     1 = Decrease by more than 10%         
@@ -274,8 +266,7 @@ How do you expect your company's profitability (net earnings after taxes) to cha
     5 = Increase by more than 10%       
 ```
 
-          
-Revenue outlook (`threeMonthRevChange`)           
+Revenue outlook (`threeMonthRevChange`):
 ```     
 How do you exect your company's revenues to change over the next three months?        
     1 = Decrease by more than 10%           
@@ -284,17 +275,16 @@ How do you exect your company's revenues to change over the next three months?
     4 = Increase by 1-10%     
     5 = Increase by more than 10%      
 ```
-
                       
-Change in employee education (`threeMonthTrainingChange`)            
+Change in employee education (`threeMonthTrainingChange`):
 ```
 How do you expect your expenditures to improve your or your employees' training, education or expertise about your business to change over the next three months?
     1 = Decrease    
     3 = Stay about the same     
     5 = Increase          
 ```
-          
-Financial situation today (`todayFinSit`)           
+
+Financial situation today (`todayFinSit`):
 ```
 How would you rate your company's financial situation today?
     1 = Very bad      
@@ -304,8 +294,8 @@ How would you rate your company's financial situation today?
     5 = Very good       
 ```          
           
-####Data Source 3####            
-Top Problems              
+####Data Source 3: Top Problems              
+Every month, the ESS also asks Thumbtack pros about the top problem their business is currently facing. The data from this question is structured as follows:
           
 Field          |   Definition      
 -------------  |   ----------------        
@@ -313,15 +303,8 @@ Field          |   Definition
 `count`        |   (int) sample size     
 `label`        |   (chr) top problem of concern for survey participants     
 `score`        |   (num) proportion of survey participants who selected problem type       
-        
       
-####Methodology####     
-Sentiments Scores data only pulls data at states and cbsa level for sample sizes >= 50.     
-         
-        
-        
-
-###How to access ESS data via R###          
+###How to access ESS data via R
           
 Steps:      
 1. Request the data from ESS API using `GET()` from the `httr` library        
@@ -331,7 +314,7 @@ Steps:
 5. Assign index labels to each data pull (refer to data dictionary above)   
 6. Save as dataframes or export as .csv files for offline analysis      
       
-#####Data Source 1: Sentiments Data#####      
+#####Data Source 1: Sentiments Data
 Sample File: https://data.thumbtack.com/v1/sentiments/states      
 
 Here is a basic example on how to pull sentiment scores data at the states level. The same can be applied to CBSAs.
@@ -344,8 +327,6 @@ ss_response <- GET(ss_url)
 warn_for_status(ss_response)
 ss_text <- content(ss_response, "text")
 ss_data <- fromJSON(ss_text, flatten = TRUE)$data
-
-
 ```
 
 Here is a more complex example of pulling all sentiment scores by demographic variables: gender, age, origin, and employer.      
@@ -389,7 +370,7 @@ write.csv(s_data, paste("s_", dem , "_data.csv", sep = ""), row.names = FALSE)
 }
 ```
           
-#####Data Source 2: Question Scores#####          
+#####Data Source 2: Question Scores
 Sample File: https://data.thumbtack.com/v1/question-scores      
 Note that column `scores` is type list.  
 ```r
@@ -422,7 +403,7 @@ s_df$index <- "National"
 
 
           
-#####Data Source 3: Top Problems#####       
+#####Data Source 3: Top Problems
 Sample File: https://data.thumbtack.com/v1/top-problems        
 Example of pulling all top problem metrics at the industry level for "Landscape and Lawncare"       
 ```
@@ -434,8 +415,8 @@ tp_df$industry <- "Landscape and Lawncare"
 ```
 ![](figure/head_top_problems.png)         
               
-###How to access ESS data via Python###  
-####Steps####
+###How to access ESS data via Python
+####Steps
 1. Import relevant libraries (`json`, `pandas`, `requests`)     
 2. Request the data from ESS API using `requests.get()`   
 3. Import the JSON data using .json()
@@ -467,7 +448,7 @@ print(sentiment_states_df)
           
 The sentiments data is now ready for analysis!        
           
-#####Dealing with Nested Lists####
+#####Dealing with Nested Lists
 The question scores data needs some restructuring for analysis. Take a look at the `scores` column in the the dataframe below: 
 ```python
 url2 = "https://data.thumbtack.com/v1/question-scores"
@@ -525,5 +506,5 @@ print(testing_df3.head()) # preview updated dataframe
 And now the question scores data is ready to be further analyzed in Python!
 
         
-#### Curious to Learn More About The Data? ####        
-Check out the [ESS survey website](https://www.thumbtack.com/survey#/sentiment!context=states&index=1&industry=0&view=absolute) for an interactive view of this data and [monthly reports](https://www.thumbtack.com/blog/economic-sentiment-feb-2017/) on economic sentiments of Thumbtack Pros.  
+#### Curious to Learn More About The Data?
+Check out the [ESS survey website](https://www.thumbtack.com/survey#/sentiment!context=states&index=1&industry=0&view=absolute) for an interactive view of this data and [monthly reports](https://www.thumbtack.com/blog/tag/economic-sentiment-survey/) on the economic sentiments of Thumbtack Pros.
