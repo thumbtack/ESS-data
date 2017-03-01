@@ -308,4 +308,4 @@ Field          |   Definition
 #### Curious to Learn More About The Data?
 Check out the [ESS survey website](https://www.thumbtack.com/survey#/sentiment!context=states&index=1&industry=0&view=absolute) for an interactive view of this data and [monthly reports](https://www.thumbtack.com/blog/tag/economic-sentiment-survey/) on the economic sentiments of Thumbtack Pros.
 
-If you need help pulling this data into R or Python, we've create two tutorials to help you do so. You can access the R tutorial here and the Python tutorial here.
+If you need help pulling this data into R or Python, we've create two tutorials to help you do so. You can access the R tutorial [here](https://github.com/thumbtack/ESS-data/blob/master/R%20Tutorial.md) and the Python tutorial [here](https://github.com/thumbtack/ESS-data/blob/master/Python%20Tutorial.md).
