@@ -20,12 +20,11 @@
 ###Overview of Thumbtack's Economic Sentiment Survey (ESS)     
 ####What is ESS?
 
-Every month, the Thumbtack Economic Sentiment Survey captures the attitudes and perspectives of thousands of business owners from across the country to gauge how they are feeling about the economy and their businesses. Now in its sixth year, this survey provides a unique vantage point on the economy, as respondents are largely mobile service professionals with five or fewer employees who operate in households across the United States. Because they are hard to reach, these professionals are frequently overlooked in other surveys of small businesses.
+Every month, the [Thumbtack Economic Sentiment Survey](https://www.thumbtack.com/survey#/sentiment) captures the attitudes and perspectives of thousands of business owners from across the country to gauge how they are feeling about the economy and their businesses. Now in its sixth year, this survey provides a unique vantage point on the economy, as respondents are largely mobile service professionals with five or fewer employees who operate in households across the United States. Because they are hard to reach, these professionals are frequently overlooked in other surveys of small businesses.
       
 ####How the data is collected####
 
-
-     
+We administer this survey through our website, prompting the small business owner-operators to take it by by displaying a banner at the top of their user dashboard. The survey is fielded for one week in the middle of every month, with the results posted on the Monday before the first Friday of every month. This is meant to synchronize with the monthly release by the Bureau of Labor Statistics of the national [Employment Situation](https://www.bls.gov/news.release/empsit.toc.htm). On average, we receive between 5,500 and 6,500 responses per month.     
         
 ####How the data is measured####
 
