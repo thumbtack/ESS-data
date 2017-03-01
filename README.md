@@ -1,5 +1,8 @@
 ## <span style="color: #F27802">Accessing Thumbtack's Economic Sentiment Survey Data</span>
-**TL;DR**: How to pull JSON data from our Economic Sentiment Survey [website](https://www.thumbtack.com/survey#/sentiment!context=states&index=1&industry=0&view=absolute) via R and Python      
+**TL;DR**
+1. What is Thumbtack's Economic Sentiment Survey?
+2. How is the data from this survey structured?
+3. How can I access the data from Thumbtack's survey [page](https://www.thumbtack.com/survey#/sentiment!context=states&index=1&industry=0&view=absolute) via R and Python?
 
 # Table of Contents   
 1. [Overview of Thumbtack's Economic Sentiment Survey (ESS)](#summary)     
