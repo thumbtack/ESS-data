@@ -84,9 +84,10 @@ The data from our Economic Sentiment Survey are publicly available via our API. 
    * These data are available in JSON format [here](https://data.thumbtack.com/v1/top-problems).
    * For more, see [below](#data-source-3).
    
-###Data Dictionary and Sources###     
-####Demographics
+###Data Dictionary and Sources
 In addition to asking the core set of economic and business questions every month, we also ask about our respondents' demographic characteristics, including gender, age, race / ethnicity ("origin"), employer status,  and industry type. Each answer to these questions has a numerical code, as defined below:
+
+####Demographics
 
     Gender    
     1 = Female  
@@ -113,7 +114,7 @@ In addition to asking the core set of economic and business questions every mont
     3 = Large Employer   
 
 
-####Industry####        
+####Industry
     0 = All Industries      
     1 = Landscaping & Lawncare      
     2 = Transportation and Moving     
