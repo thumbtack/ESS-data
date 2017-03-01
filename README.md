@@ -83,7 +83,9 @@ The data from our Economic Sentiment Survey are publicly available via our API. 
    * For more, see [below](#data-source-3).
    
 ###Data Dictionary and Sources###     
-####Demographics####      
+####Demographics
+In addition to asking the core set of economic and business questions every month, we also ask about our respondents' demographic characteristics, such as gender, age, race / ethnicity ("origin"), employer status,  and industry type. Each answer to these questions has a code, as defined below:
+
     Gender    
     1 = Female  
     2 = Male  
