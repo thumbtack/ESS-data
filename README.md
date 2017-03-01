@@ -28,8 +28,16 @@ We administer this survey through our website, prompting the small business owne
         
 ####How the data is measured####
 
+Based on the responses to the survey in each period, Thumbtack and Bloomberg have constructed two indexes that we hope will be able to track activity among small service professionals over time – a Small Business Sentiment Index and a Small Business Inflation index.
 
+These Indexes represent our current best estimates of where the strongest signal can be taken from the survey data collected to date – we expect to update the weights applied and formulas as more data comes in.
 
+An individual index number is computed for each question in Appendix A in each period using the following formulas:
+*For questions with three point scales:
+- (%_positive_response) + (0.5*(%_neutral_response))
+* For questions with a five point scale:
+- (%_positive_response + %_very_positive_response) + (0.5*(%_neutral_response)
+* For questions with true/false answers, only the percentage of positive answers was used.
 
 
 ####How the data is stored####
