@@ -1,5 +1,5 @@
 ## <span style="color: #F27802">Accessing and Interpreting Thumbtack's Economic Sentiment Survey Data</span>
-
+### NOTE: use of this data requires citing Thumbtack and linking to [Thumbtack.com](https://www.thumbtack.com). For more, see the [data license](https://github.com/thumbtack/ESS-data/blob/master/ESS%20Data%20License.pdf).
 ### Table of Contents   
 1. [Overview of Thumbtack's Economic Sentiment Survey (ESS)](#summary)     
     * [What is ESS?](#what-is-ess?)     
